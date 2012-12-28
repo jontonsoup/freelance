@@ -21,7 +21,8 @@
     %link{:href => "images/apple-touch-icon-114x114.png", :rel => "apple-touch-icon", :sizes => "114x114"}/
     %meta{:content => "", :name => "author"}/
   %body
-    .container
-      /navbar
-      = haml :navbar
-    = yield
+    #header-bg
+      .container
+        /navbar
+        = haml :navbar
+      = yield
