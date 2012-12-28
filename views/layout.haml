@@ -21,12 +21,6 @@
     %meta{:content => "", :name => "author"}/
   %body
     .contianer
-      .navbar
-        .navbar-inner
-          %a.brand.pull-right{:href => "#"} FD Designs
-          %ul.nav.pull-right
-            %li.active
-              %a{:href => "/"} Home
-            %li
-              %a{:href => "/"} Fluid
+      /navbar
+      = haml :navbar
       = yield
