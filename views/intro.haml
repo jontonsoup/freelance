@@ -2,18 +2,34 @@
   /navbar
   = haml :navbar
 #call-to-action
-  %h1 We create lasting web experiences
-  %h3 A full service boutique web development firm
-  %a.btn.btn-primary.btn-large{:href =>"/contact"} Contact Us
-  %h6 We wont bite
-  %h4 Our arsenal
+  .row
+    .span4
+      %img(src="../img/desktop-phone-tablet.png")
+    .span8
+      %center
+        %h1 We create lasting web experiences.
+        %h3small A full service boutique web development firm. <br><br>
+        %a.btn.btn-primary.btn-large{:href =>"/contact"} Contact Us
+        %h5 (We wont bite)
+  %center
+    %img(src="../img/arsenal-dot-dot-dot.png")
+    <br>
+    <br>
 /= link_to image_tag('')
 .row
   .span3
-    .well Rails!
+    .well 
+      %center
+        %img(src="../img/well-one.png")
   .span3
-    .well CSS!
+    .well
+      %center
+        %img(src="../img/well-two.png")
   .span3
-    .well Magic!
+    .well
+      %center
+        %img(src="../img/well-three.png")
   .span3
-    .well Whoo!
+    .well
+      %center
+        %img(src="../img/well-four.png")

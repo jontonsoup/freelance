@@ -1,4 +1,4 @@
-#intro {background-image:url('../img/brick_patch.jpg');
+#intro {background-image:url('../img/intro-bg.png');
                 background-repeat: repeat;}
 #nav-links{
     padding-top: 10px;
@@ -8,4 +8,8 @@
     margin: 0px !important;
     height: 7px;
     border: none !important;
+}
+
+h4 small {
+  font-size: 10px;
 }

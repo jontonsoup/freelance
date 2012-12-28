@@ -598,13 +598,21 @@ a.text-success:hover {
 h1,
 h2,
 h4,
-h5,
 h6 {
   margin: 12.5px 0;
   font-family: inherit;
   font-weight: bold;
   line-height: 25px;
   color: #3c3251;
+  text-rendering: optimizelegibility;
+}
+
+h5 {
+  margin: 12.5px 0;
+  font-family: inherit;
+  font-weight: normal;
+  line-height: 15px;
+  color: #797979;
   text-rendering: optimizelegibility;
 }
 
@@ -620,32 +628,39 @@ h3{
 h1 small,
 h2 small,
 h3 small,
-h4 small,
 h5 small,
 h6 small {
   font-weight: normal;
   line-height: 1;
   color: #999999;
 }
+
+h4 small {
+  font-weight: normal;
+  line-height: 1;
+  color: #797979;
+}
+
+
 h1,
 h2,
 h3 {
   line-height: 50px;
 }
 h1 {
-  font-size: 60.5px;
+  font-size: 50px;
 }
 h2 {
   font-size: 49.5px;
 }
 h3 {
-  font-size: 38.5px;
+  font-size: 36px;
 }
 h4 {
   font-size: 27.5px;
 }
 h5 {
-  font-size: 22px;
+  font-size: 15px;
 }
 h6 {
   font-size: 18.7px;
@@ -657,11 +672,13 @@ h2 small {
   font-size: 27.5px;
 }
 h3 small {
-  font-size: 22px;
+  font-size: 26px;
 }
 h4 small {
   font-size: 22px;
 }
+
+
 .page-header {
   padding-bottom: 11.5px;
   margin: 25px 0 37.5px;
@@ -2072,7 +2089,7 @@ legend + .control-group {
 }
 .btn-large {
   padding: 11px 19px;
-  font-size: 27.5px;
+  font-size: 20px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -2136,11 +2153,11 @@ input[type="button"].btn-block {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #006dcc;
-  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
-  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
-  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  background-image: -moz-linear-gradient(top, #25a0fb, #134a97);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#25a0fb), to(#134a97));
+  background-image: -webkit-linear-gradient(top, #25a0fb, #134a97);
+  background-image: -o-linear-gradient(top, #25a0fb, #134a97);
+  background-image: linear-gradient(to bottom, #25a0fb, #134a97);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
   border-color: #0044cc #0044cc #002a80;
@@ -2156,8 +2173,8 @@ input[type="button"].btn-block {
 .btn-primary.disabled,
 .btn-primary[disabled] {
   color: #ffffff;
-  background-color: #0044cc;
-  *background-color: #003bb3;
+  background-color: #134a97;
+  *background-color: #134a97;
 }
 .btn-primary:active,
 .btn-primary.active {
@@ -5032,10 +5049,10 @@ a.thumbnail:hover {
   margin-bottom: 0;
 }
 .well {
-  min-height: 20px;
+  min-height: 220px;
   padding: 19px;
   margin-bottom: 20px;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   border: 1px solid #e3e3e3;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
