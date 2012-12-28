@@ -6,5 +6,5 @@ gem "binding_of_caller"
 gem 'rmagick'
 
 group :development do
-  gem "better_errors"
+  gem 'better_errors'
 end

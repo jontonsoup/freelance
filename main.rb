@@ -12,7 +12,7 @@ end
 set :haml, :format => :html5
 
 helpers do
-  sprite_tag(name)
+  def sprite_tag(name)
     image_tag('s.gif', :class => name)
   end
 end
