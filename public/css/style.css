@@ -1,2 +1,11 @@
 #intro {background-image:url('../img/brick_patch.jpg');
                 background-repeat: repeat;}
+#nav-links{
+    padding-top: 10px;
+}
+#top-purple-line{
+    background-color: #3c3251;
+    margin: 0px !important;
+    height: 7px;
+    border: none !important;
+}
