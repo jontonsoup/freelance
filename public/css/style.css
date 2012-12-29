@@ -1,5 +1,12 @@
 #intro {background-image:url('../img/intro-bg.png');
                 background-repeat: repeat;}
+#value {
+    background-image:url('../img/brick_patch.jpg');
+}
+
+#portfolio {
+    background-image: url('../img/nonwinding_brick_patch.jpg');
+}
 #nav-links{
     padding-top: 10px;
 }
