@@ -1,5 +1,5 @@
 #intro {background-image:url('../img/intro-bg.png');
-                background-repeat: repeat;}
+background-repeat: repeat;}
 #value {
     background-image:url('../img/brick_patch.jpg');
 }
@@ -28,11 +28,15 @@ h4 small {
 }
 
 /*#value {background-image:url('../img/value-bg.jpg');
-                background-repeat: repeat;}*/
+background-repeat: repeat;}*/
 
-#whowearebuttonarrow {
-    margin-left: -50px;
-    margin-top: 10px;
+.whowearebuttonarrow {
+    position: relative;
+    left: 160px;
+    top: -40px;
+    margin: 0px;
+    padding: 0px;
+    width: 140px;
 }
 
 #footertext {
