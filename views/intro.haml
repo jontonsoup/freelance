@@ -32,9 +32,9 @@
         %img(src="../img/well-four.png"){:class => "img20"}
 
 %div{:id => "contact", :class => "modal hide fade", :tabindex => "-1", :role => "dialog", :"aria-labelledby" => "myModalLabel", :"aria-hidden" =>"true"}
-  .modal-header
+  .modal-header 
     %button{:type => "button", :class => "close", :"data-dismiss" => "modal", :"aria-hidden" => "true"}×
-    %h3{:id => "myModalLabel"} Send us an email!
+    %h2{:id => "myModalLabel"} Send us an email!
   .modal-body
     %form{ :action => "", :method => "post", :id => "form"}
       %fieldset
@@ -43,7 +43,7 @@
         %label{:for => "mail"} Email:
         %input{:type => "text", :name => "mail", :class => "text"}
         %label{:for => "body"} Message:
-        %textarea{:name => "body"}
+        %textarea{:name => "body", :id => "modalText"}
   .modal-footer
     %button.btn{:"data-dismiss" => "modal", :"aria-hidden" => "true"} Close
     %input{:type => "submit", :value => "Send", :id => "submit", :class => "btn btn-primary "}

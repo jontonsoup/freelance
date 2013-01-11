@@ -38,7 +38,17 @@ background-repeat: repeat;}*/
     padding: 0px;
     width: 140px;
 }
+#modalText{
+    width: 500px;
+    height: 100px;
+}
 
+#myModalLabel{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 5px;
+    font-color: #3c3251 !important;
+}
 #footertext {
     margin-top: -40px;
     margin-left: 50px;
