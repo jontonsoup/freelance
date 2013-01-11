@@ -9,7 +9,7 @@
       %center
         %h1 We create lasting web experiences.
         %h3small A full service boutique web development firm. <br><br>
-        %a.btn.btn-primary.btn-large{:href =>"/contact"} Contact Us
+        %a.btn.btn-primary.btn-large{:href => "#contact", :role => "button", :class => "btn", :"data-toggle" => "modal"} Contact Us
         %h5 (We wont bite)
   %center
     %img(src="../img/arsenal-dot-dot-dot.png"){:id => "dot-dot-dot"}
@@ -30,3 +30,20 @@
     .well
       %center
         %img(src="../img/well-four.png"){:class => "img20"}
+
+%div{:id => "contact", :class => "modal hide fade", :tabindex => "-1", :role => "dialog", :"aria-labelledby" => "myModalLabel", :"aria-hidden" =>"true"}
+  .modal-header
+    %button{:type => "button", :class => "close", :"data-dismiss" => "modal", :"aria-hidden" => "true"}×
+    %h3{:id => "myModalLabel"} Send us an email!
+  .modal-body
+    %form{ :action => "", :method => "post", :id => "form"}
+      %fieldset
+        %label{:for => "name"} Name:
+        %input{:type => "text", :name => "name", :class => "text"}
+        %label{:for => "mail"} Email:
+        %input{:type => "text", :name => "mail", :class => "text"}
+        %label{:for => "body"} Message:
+        %textarea{:name => "body"}
+  .modal-footer
+    %button.btn{:"data-dismiss" => "modal", :"aria-hidden" => "true"} Close
+    %input{:type => "submit", :value => "Send", :id => "submit", :class => "btn btn-primary "}

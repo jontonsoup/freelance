@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'sinatra'
 require 'haml'
+require 'pony'
 
 #set better errors for testing
 if ENV['RACK_ENV'] != 'production'
@@ -18,5 +19,28 @@ helpers do
 end
 
 get '/' do
+  haml :index
+end
+
+post '/' do
+  name = params[:name]
+  mail = params[:mail]
+  body = params[:body]
+  Pony.mail(
+    :from => name + "<" + mail + ">",
+    :to => 'friedmanj98@gmail.com',
+    :subject => params[:name] + " has contacted you",
+    :body => params[:body],
+    :port => '587',
+    :via => :smtp,
+    :via_options => {
+      :address              => 'smtp.sendgrid.net',
+      :port                 => '587',
+      :enable_starttls_auto => true,
+      :user_name            => ENV['SENDGRID_USERNAME'],
+      :password             => ENV['SENDGRID_PASSWORD'],
+      :authentication       => :plain,
+      :domain               => ENV['SENDGRID_DOMAIN']
+      })
   haml :index
 end
