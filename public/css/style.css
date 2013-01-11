@@ -46,7 +46,10 @@ background-repeat: repeat;}*/
     font-weight: normal;
     font-size: 13px;
 }
-
+.mobileweb{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .img40{
     margin-top: 40px;
 }
