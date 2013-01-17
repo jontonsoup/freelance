@@ -29,12 +29,15 @@
         %h3small © 2012 FD DESIGNS, Inc. All rights reserved.
   %script{:type => "text/javascript", :src  => "http://code.jquery.com/jquery-latest.min.js"}
   %script{:type => "text/javascript", :src  => "js/jquery.pagescroller.lite.js"}
-  / %script{:type => "text/javascript", :src  => "js/bootstrap.min.js"}
+  %script{:type => "text/javascript", :src  => "js/bootstrap.min.js"}
   :javascript
     $(document).ready(function(){
       // initiate page scroller plugin
       $('body').pageScroller({
         navigation: '#nav-links'
+      });
+      $('.next').bind('click', function(){
+        pageScroller.next();
       });
         $('#submit').on('click', function(e){
            e.preventDefault();
