@@ -76,3 +76,12 @@ background-repeat: repeat;}*/
 #value-header{
     margin-top: 40px;
 }
+
+.spacer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+}
+.quote{
+    margin-top: 30px;
+}
