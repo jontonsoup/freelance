@@ -12,6 +12,10 @@ end
 
 set :haml, :format => :html5
 
+configure do
+  use Rack::Deflater
+end
+
 helpers do
   def sprite_tag(name)
     image_tag('s.gif', :class => name)
