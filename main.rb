@@ -16,7 +16,7 @@ set :haml, :format => :html5
 configure do
   use Rack::Deflater
   use Rack::Cache
-  set :static_cache_control, [:public, :max_age => 36000]
+  set :static_cache_control, [:public, :max_age => 360000]
 end
 
 
