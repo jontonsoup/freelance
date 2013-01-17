@@ -2,6 +2,7 @@ require 'rubygems'
 require 'sinatra'
 require 'haml'
 require 'pony'
+require "rack/cache"
 
 #set better errors for testing
 if ENV['RACK_ENV'] != 'production'
@@ -14,7 +15,9 @@ set :haml, :format => :html5
 
 configure do
   use Rack::Deflater
+  use Rack::Cache
 end
+
 
 helpers do
   def sprite_tag(name)
@@ -23,6 +26,7 @@ helpers do
 end
 
 get '/' do
+  cache_control :public, :max_age => 36000
   haml :index
 end
 
