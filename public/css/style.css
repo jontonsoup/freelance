@@ -30,6 +30,23 @@ h4 small {
 /*#value {background-image:url('../img/value-bg.jpg');
 background-repeat: repeat;}*/
 
+
+
+#whoweare_container{
+    min-height: 690px;
+}
+
+#value_container{
+    min-height: 718px;
+}
+
+#intro_container{
+    min-height: 690px;
+}
+
+#portfolio_container{
+    min-height: 690px;
+}
 .whowearebuttonarrow {
     position: relative;
     left: 160px;
