@@ -2,8 +2,11 @@
   %h1 Our portfolio
 #showcase
   %center
+    %br
+    %br
+    %img(src="../img/showcase.png")
     %p
-      %a.btn{"data-toggle" => "lightbox", :href => "#demoLightboxCarousel"} Check it out...
+      %a.btn.btn-large{"data-toggle" => "lightbox", :href => "#demoLightboxCarousel", :id => "caroselbutton"} Check it out...
     #demoLightboxCarousel.lightbox.hide.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1", :style => "z-index: 1200;  outline-width: 0; width: 90%;"}
       .lightbox-content
         #myCarousel.carousel.slide
@@ -26,7 +29,12 @@
               %iframe{:allowfullscreen => "", :frameborder => "0", :height => "600px", :src => "http://www.youtube.com/embed/eH5EVwLcgGo", :width => "100%"}
               .carousel-caption
                 %h4 Project Stagecoach
-                %p We helped collaborate as part of a larger team on Stagecoach, a project management platform for film production.
+                %p We helped collaborate as part of a larger team on Stagecoach, a project management platform for film production (no longer active).
+            .item
+              %img(src="../img/lb.png")
+              .carousel-caption
+                %h4 License Buddy
+                %p License Buddy helps CPA's and other professionals keep track of their continuing education requirements.
           / Carousel nav
           %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} &lsaquo;
           %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} &rsaquo;
