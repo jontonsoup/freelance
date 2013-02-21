@@ -2,7 +2,35 @@
   %h1 Our portfolio
 #showcase
   %center
-    %img(src="../img/showcase-filler.jpg")
+    .container
+      .page-header
+        %h1 Bonus!
+      %p
+        You can make use of the Twitter Bootstrap Carousel plugin
+        %a{"data-toggle" => "lightbox", :href => "#demoLightboxCarousel"} inside the lightbox!
+      #demoLightboxCarousel.lightbox.hide.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1", :style => "z-index: 1200;  outline-width: 0;"}
+        .lightbox-content
+          #myCarousel.carousel.slide
+            / Carousel items
+            .carousel-inner
+              .active.item
+                %img{:src => "http://jbutz.github.com/bootstrap-lightbox/assets/img/large.png"}/
+                .carousel-caption
+                  %h4 First Thumbnail label
+                  %p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+              .item
+                %img{:src => "http://jbutz.github.com/bootstrap-lightbox/assets/img/large.png"}/
+                .carousel-caption
+                  %h4 First Thumbnail label
+                  %p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+              .item
+                %img{:src => "http://jbutz.github.com/bootstrap-lightbox/assets/img/large.png"}/
+                .carousel-caption
+                  %h4 First Thumbnail label
+                  %p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+            / Carousel nav
+            %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} &lsaquo;
+            %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} &rsaquo;
 .row
   %center
     .mobileweb
