@@ -6,7 +6,9 @@ gem "binding_of_caller"
 gem 'rmagick'
 gem 'pony'
 gem 'rack-cache'
-gem 'newrelic_rpm'
+configure :production do
+  require 'newrelic_rpm'
+end
 
 group :development do
   gem 'better_errors'
