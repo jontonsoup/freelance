@@ -3,7 +3,9 @@ require 'sinatra'
 require 'haml'
 require 'pony'
 require "rack/cache"
-require 'newrelic_rpm'
+configure :production do
+  require 'newrelic_rpm'
+end
 
 #set better errors for testing
 if ENV['RACK_ENV'] != 'production'
