@@ -2,7 +2,9 @@ require 'rubygems'
 require 'sinatra'
 require 'haml'
 require 'pony'
-require "rack/cache"
+require 'rack/cache'
+require 'coffee-script'
+
 configure :production do
   require 'newrelic_rpm'
 end
@@ -55,4 +57,8 @@ post '/' do
       :domain               => ENV['SENDGRID_DOMAIN']
       })
   haml :index
+end
+
+get '/js/scripts.js' do
+  coffee :scripts
 end
