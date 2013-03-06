@@ -31,6 +31,10 @@ helpers do
   end
 end
 
+not_found do
+  haml :'404'
+end
+
 get '/' do
   cache_control :public, :max_age => 36000
   haml :index

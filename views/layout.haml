@@ -30,6 +30,7 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
+    %script{:type => "text/javascript", :src  => "http://code.jquery.com/jquery-latest.min.js"}
 
   %body
     %hr{:id => "top-purple-line"}
@@ -38,8 +39,7 @@
     %hr{:id => "bottom-purple-line"}
       #footertext
         %h3small © 2012 FD DESIGNS, Inc. All rights reserved.
-  %script{:type => "text/javascript", :src  => "http://code.jquery.com/jquery-latest.min.js"}
-  %script{:type => "text/javascript", :src  => "js/jquery.pagescroller.lite.js"}
   %script{:type => "text/javascript", :src  => "js/bootstrap.min.js"}
   %script{:type => "text/javascript", :src  => "js/bootstrap-lightbox.js"}
   %script{:type => "text/javascript", :src  => "js/scripts.js"}
+

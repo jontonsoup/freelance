@@ -1,0 +1,32 @@
+:css
+  #canvas { border:1px solid black; top:0px; left:0px; }
+  .button { position:absolute; border:1px solid black; }
+  #left-controls { position:absolute; left:1px; bottom:0px; display:none; }
+  #right-controls { position:absolute; right:1px; bottom:0px; display:none; }
+  #up { width:200px; height:100px; bottom:100px;}
+  #left { width:100px; height:100px; bottom:0px;}
+  #right { width:100px; height:100px; bottom:0px; left:100px; }
+  #space { width:200px; height:200px; bottom:0px; right:0px; }
+.container{:id => "header-bg"}
+  .navbar
+    .navbar-inner
+      %a.brand.pull-right{:href => "#"}
+        %img(src="../img/logo.png")
+      %ul.nav.pull-right{:id => "nav-links404"}
+        %li
+          %a{:href => "/#", :onClick => "_gaq.push(['_trackEvent', 'Nav', 'Nav -Philosophy']);"} Philosophy
+        %li
+          %a{:href => "/#portfolio", :onClick => "_gaq.push(['_trackEvent', 'Nav', 'Nav -Portfolio']);"} Portfolio
+        %li
+          %a{:href => "/#who_we_are", :onClick => "_gaq.push(['_trackEvent', 'Nav', 'who_we_are']);"} Who we are
+
+  #game-container
+    %canvas#canvas{:height => "540", :width => "780"}
+    #left-controls
+      #up.button THRUST
+      #left.button LEFT
+      #right.button RIGHT
+    #right-controls
+      #space.button FIRE
+  %script{:type => "text/javascript", :src  => "js/game.js"}
+  %script{:type => "text/javascript", :src  => "js/vector_battle_regular.typeface.js"}
