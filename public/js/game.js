@@ -955,6 +955,7 @@ Game = {
       }
     },
     run: function () {
+     Text.renderText('FD Designs', 50, Game.canvasWidth/2 - 170, Game.canvasHeight - 20);
       for (var i = 0; i < Game.sprites.length; i++) {
         if (Game.sprites[i].name == 'asteroid') {
           break;
