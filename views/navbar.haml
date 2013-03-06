@@ -4,8 +4,8 @@
       %img(src="../img/logo.png")
     %ul.nav.pull-right{:id => "nav-links"}
       %li
-        %a{:href => ""} Philosophy
+        %a{:href => "", :onClick => "_gaq.push(['_trackEvent', 'Nav', 'Nav -Philosophy']);"} Philosophy
       %li
-        %a{:href => "/#portfolio"} Portfolio
+        %a{:href => "/#portfolio", :onClick => "_gaq.push(['_trackEvent', 'Nav', 'Nav -Portfolio']);"} Portfolio
       %li
-        %a{:href => "/#who_we_are"} Who we are
+        %a{:href => "/#who_we_are", :onClick => "_gaq.push(['_trackEvent', 'Nav', 'who_we_are']);"} Who we are

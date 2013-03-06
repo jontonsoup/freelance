@@ -19,7 +19,7 @@
       %p We launch your product <br> and take a much needed nap.
 .row
   %center
-    %a.btn.btn-primary.btn-large.next{:href =>"/#portfolio"} View our portfolio
+    %a.btn.btn-primary.btn-large.next{:href =>"/#portfolio", :onClick => "_gaq.push(['_trackEvent', 'Funnel', 'View portfolio pressed']);"}} View our portfolio
 .row
   %center
     %img(src="../img/value-arrow.png")
