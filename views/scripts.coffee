@@ -10,5 +10,11 @@ $ ->
 
       # Find form and submit it
       $("#form").submit()
-
+    $(document).keydown (e) ->
+      unless $('#contact').css('display') == "block"
+        if e.keyCode == 74
+           pageScroller.next()
+        else if e.keyCode == 75
+           pageScroller.prev()
+        false
 
